@@ -1,0 +1,359 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 底部导航栏样式 */
+.bottom-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; /* 底部导航栏的背景颜色 */
+    color: #fff; /* 文本颜色 */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* 底部导航栏的高度 */
+}
+
+/* 导航项样式 */
+.nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease, font-size 0.2s ease; /* 添加过渡效果 */
+}
+
+.nav-item i {
+    font-size: 24px; /* 图标大小 */
+    transition: transform 0.2s ease; /* 添加图标的过渡效果 */
+}
+
+.nav-item span {
+    font-size: 14px; /* 文字大小 */
+    margin-top: 5px; /* 文字和图标之间的间距 */
+    transition: transform 0.2s ease; /* 添加文字的过渡效果 */
+}
+
+/* 鼠标悬停时的样式 */
+.nav-item:hover {
+    background-color: #555; /* 悬停时的背景颜色 */
+    transform: translateY(-5px); /* 使导航项向上位移5px */
+}
+
+.nav-item:hover i {
+    transform: scale(1.1); /* 使图标稍微放大 */
+}
+
+.nav-item:hover span {
+    transform: translateY(5px); /* 使文字向下位移5px */
+}
+
+/*-----------------------------------------------*/
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+.top-header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a white line at the top */
+.top-header::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.hidden-phone {
+    opacity: 0.7;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.action-buttons .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+.action-buttons .btn i {
+    margin-right: 10px;
+}
+
+.action-buttons .btn:hover {
+    color: #4CAF50;
+}
+
+/*---------------------------------------*/
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+.top-header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.top-header::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 1px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 0;
+    margin-right: 2px;
+    object-fit: cover;
+}
+
+.hidden-phone {
+    opacity: 0.8;
+    font-size: 14px;
+    margin-left: 0;
+}
+
+.action-buttons .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.action-buttons .btn i {
+    margin-right: 5px;
+}
+
+.action-buttons .btn:hover {
+    color: #4CAF50;
+}
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* My Appointments box styles */
+.appointment-box {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.more-icon i {
+    font-size: 14px;
+}
+
+/* Appointment section styles */
+.appointment-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.appointment-item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+}
+
+.appointment-item i {
+    font-size: 28px;
+    color: #333;
+}
+
+.appointment-item p {
+    margin-top: 10px;
+}
+
+.notification {
+    position: absolute;
+    top: -10px; /* 调整红点的位置 */
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    display: none;
+}
+
+.appointment-item:hover {
+    transform: scale(1.1);
+}
+
+.appointment-item:hover .notification {
+    display: inline-block;
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Module box styles */
+.module-box {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 22px;
+}
+
+.module-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* 半透明细线 */
+}
+
+.module-item:last-child {
+    border-bottom: none; /* 移除最后一个模块的底部边线 */
+}
+
+.module-item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Optional: Adjust icon color or other styles as needed */
+.module-item i.fa-user {
+    color: #3498db; /* 调整图标颜色 */
+}
+
+.module-item i.fa-comment {
+    color: #e74c3c;
+}
+
+.module-item i.fa-heart {
+    color: #f39c12;
+}
+
+.module-item i.fa-file-alt {
+    color: #9b59b6;
+}
+
+.module-item i.fa-home {
+    color: #2ecc71;
+}
+
+.module-item i.fa-chart-bar {
+    color: #1abc9c;
+}
+
+
+
+

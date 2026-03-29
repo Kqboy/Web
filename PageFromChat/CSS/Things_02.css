@@ -1,0 +1,144 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px; /* Increase font size */
+}
+
+.price {
+    color: #333333;
+    font-size: 24px;
+}
+
+/* Product details styles */
+.product-details {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for small screens */
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden; /* Prevent box-shadow overflow */
+}
+
+.product-image {
+    flex-basis: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center image */
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Add border radius */
+}
+
+.product-description {
+    flex-basis: 45%;
+    padding: 20px;
+}
+
+.product-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.buy-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add spacing */
+}
+
+.buy-now:hover {
+    background-color: #333333;
+}
+
+/* Module container styles */
+.real-time-camera, .emotional-analysis, .conversation {
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden; /* Prevent box-shadow overflow */
+}
+
+/* Module title styles */
+.real-time-camera h2, .emotional-analysis h2, .conversation h2 {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px; /* Adjust font size */
+}
+
+/* Camera feed styles */
+.camera-feed {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center camera feed */
+    align-items: center;
+}
+
+.camera-feed video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Emotional data and chat history styles */
+.emotional-data, .chat-history {
+    padding: 20px;
+}
+
+.emotional-data p {
+    font-size: 18px;
+}
+
+.chat-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chat-history li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px; /* Add spacing */
+}
+

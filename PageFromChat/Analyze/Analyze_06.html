@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Analyze_06.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>小程序</title>
+</head>
+<body>
+<header>
+    <div id="icons">
+        <div id="location-text-icon">
+            <i class="fas fa-map-marker-alt"></i>
+            <strong><span class="small-text">合肥</span></strong>
+        </div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="输入搜索内容">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="chat-icon"><i class="fas fa-comments"></i></div>
+    </div>
+</header>
+<div class="module-container">
+    <!-- 凸显效果和圆边效果 -->
+    <div class="highlight-box">
+        <!-- 轮播图 -->
+        <div class="swiper">
+            <!-- 图片超链接 -->
+            <a href="../Things_01.html">
+                <img src="../images/01.jpg" alt="Image 1" class="slide-image">
+            </a>
+            <!-- 图片超链接 -->
+            <a href="../Things_02.html">
+                <img src="../images/02.jpg" alt="Image 2" class="slide-image">
+            </a>
+            <!-- 图片超链接 -->
+            <a href="../Things_03.html">
+                <img src="../images/03.jpg" alt="Image 3" class="slide-image">
+            </a>
+            <!-- 添加更多轮播项，以此类推 -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="header">
+        <div class="header-left">
+            <h1>功能实现</h1>
+        </div>
+        <div class="header-right">
+            <a href="#" class="more-link">
+                更多功能
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="feature-box">
+        <div class="feature">
+            <i class="fas fa-eye"></i>
+            <h3>实时监测</h3>
+        </div>
+        <div class="feature">
+            <i class="far fa-comments"></i>
+            <h3>情感交互</h3>
+        </div>
+        <div class="feature">
+            <i class="fas fa-chart-bar"></i>
+            <h3>数据分析</h3>
+        </div>
+        <div class="feature">
+            <i class="fas fa-user"></i>
+            <h3>个性化服务</h3>
+        </div>
+        <div class="feature">
+            <i class="far fa-smile"></i>
+            <h3>人脸识别</h3>
+        </div>
+        <div class="feature">
+            <i class="far fa-image"></i>
+            <h3>图像采集</h3>
+        </div>
+    </div>
+</div>
+<!--底部导航-->
+<div class="bottom-navbar">
+    <a href="../First.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>首页</span>
+    </a>
+    <a href="../Analyze.html" class="nav-item">
+        <i class="fas fa-robot"></i>
+        <span>数据分析</span>
+    </a>
+    <a href="../ChatWith.html" class="nav-item">
+        <i class="fas fa-comments"></i>
+        <span>交流</span>
+    </a>
+    <a href="../Myself.html" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>我的</span>
+    </a>
+</div>
+<script src="../Analyze_For/Analyze_06.js"></script>
+</body>
+</html>

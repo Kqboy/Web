@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Analyze_02.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>小程序</title>
+</head>
+<body>
+<header>
+    <div id="icons">
+        <div id="location-text-icon">
+            <i class="fas fa-map-marker-alt"></i>
+            <strong><span class="small-text">合肥</span></strong>
+        </div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="输入搜索内容">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="chat-icon"><i class="fas fa-comments"></i></div>
+    </div>
+</header>
+<div class="module-container">
+    <div class="highlight-box">
+        <div id="mood-chart-container">
+            <canvas id="mood-chart"></canvas>
+        </div>
+        <div class="parameter-container">
+            <div class="parameter">
+                <div class="circle wave-loader"></div>
+                <p>Happiness Level</p>
+                <span id="happiness-level">80%</span>
+            </div>
+            <div class="parameter">
+                <div class="circle wave-loader"></div>
+                <p>Sadness Level</p>
+                <span id="sadness-level">20%</span>
+            </div>
+            <div class="parameter">
+                <div class="circle wave-loader"></div>
+                <p>Stress Level</p>
+                <span id="stress-level">30%</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部导航-->
+<div class="bottom-navbar">
+    <a href="../First.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>首页</span>
+    </a>
+    <a href="../Analyze.html" class="nav-item">
+        <i class="fas fa-robot"></i>
+        <span>数据分析</span>
+    </a>
+    <a href="../ChatWith.html" class="nav-item">
+        <i class="fas fa-comments"></i>
+        <span>交流</span>
+    </a>
+    <a href="../Myself.html" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>我的</span>
+    </a>
+</div>
+<script src="../Analyze_For/Analyze_02.js"></script>
+</body>
+</html>

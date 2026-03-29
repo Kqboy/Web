@@ -1,0 +1,406 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #f2f2f2; /* 设置浅灰色背景 */
+}
+
+header {
+    background-color: transparent; /* 设置顶部的背景为透明 */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+}
+
+#location-icon i,
+#chat-icon i {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #f2f2f2; /* 添加底色 */
+    border-radius: 50%; /* 设置圆形边角 */
+    padding: 10px; /* 添加内边距 */
+    color: #333; /* 设置图标颜色 */
+    margin: 0 15px; /* 增加图标间距 */
+}
+
+#location-text {
+    font-weight: bold;
+    color: black;
+    display: flex; /* 横向显示 */
+    align-items: center; /* 垂直居中 */
+    margin-right: 15px; /* 添加右侧间距，离地标近一点 */
+}
+
+.small-text {
+    font-size: 14px; /* 缩小字号 */
+}
+
+#location-address {
+    font-size: 12px;
+    color: #333; /* 设置文本颜色为灰色 */
+    text-align: center;
+    margin-top: 5px;
+}
+
+main {
+    padding: 10px;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 10px;
+    background-color: rgba(240, 240, 240, 0.8); /* 设置透明浅灰色背景 */
+    border-radius: 20px; /* 添加更圆的边角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加凸显的阴影效果 */
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #333;
+}
+
+#search-button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #333;
+}
+
+#search-button i {
+    font-size: 20px;
+}
+
+#search-button:hover {
+    background-color: #f2f2f2;
+}
+
+#location-text-icon {
+    display: flex; /* 横向显示 */
+    align-items: center; /* 垂直居中 */
+}
+
+#location-text-icon i {
+    font-size: 30px; /* 增大地标图标的大小 */
+    color: black; /* 设置地标图标颜色为黑色 */
+    margin-right: 5px; /* 添加右侧间距 */
+}
+
+#location-text-icon {
+    font-weight: bold;
+    display: flex; /* 横向显示 */
+    align-items: center; /* 垂直居中 */
+    white-space: nowrap; /* 强制不换行 */
+    flex-wrap: nowrap; /* 强制不换行 */
+}
+
+#location-text-icon span {
+    color: black !important; /* 设置 "合肥" 字体颜色为黑色 */
+    display: inline; /* 强制横向显示 */
+
+}
+
+.small-text {
+    color: black;
+    font-size: 14px;
+}
+
+/* 在媒体查询中进一步调整手机屏幕上的样式 */
+@media (max-width: 600px) {
+    #location-text-icon i {
+        font-size: 24px; /* 进一步适应小屏幕 */
+    }
+
+    #location-text {
+        margin-right: 2px;
+    }
+}
+
+/*---------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+/* 底部导航栏样式 */
+.bottom-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; /* 底部导航栏的背景颜色 */
+    color: #fff; /* 文本颜色 */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* 底部导航栏的高度 */
+}
+
+/* 导航项样式 */
+.nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease, font-size 0.2s ease; /* 添加过渡效果 */
+}
+
+.nav-item i {
+    font-size: 24px; /* 图标大小 */
+    transition: transform 0.2s ease; /* 添加图标的过渡效果 */
+}
+
+.nav-item span {
+    font-size: 14px; /* 文字大小 */
+    margin-top: 5px; /* 文字和图标之间的间距 */
+    transition: transform 0.2s ease; /* 添加文字的过渡效果 */
+}
+
+/* 鼠标悬停时的样式 */
+.nav-item:hover {
+    background-color: #555; /* 悬停时的背景颜色 */
+    transform: translateY(-5px); /* 使导航项向上位移5px */
+}
+
+.nav-item:hover i {
+    transform: scale(1.1); /* 使图标稍微放大 */
+}
+
+.nav-item:hover span {
+    transform: translateY(5px); /* 使文字向下位移5px */
+}
+
+/*-----------------------------------------------*/
+
+/* styles.css */
+
+/* 整体容器样式 */
+.module-container {
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+}
+
+/* 凸显效果和圆边效果 */
+.highlight-box {
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+/* 轮播图样式 */
+.swiper {
+    width: 100%;
+    height: 180px; /* 设置轮播图高度 */
+    overflow: hidden;
+    position: relative;
+}
+
+/* 轮播项样式 */
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 图片超链接样式 */
+.slide-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*功能实现*/
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the whole page */
+body {
+    /*background-color: #292929;*/
+    font-family: Arial, sans-serif;
+}
+
+/* Container for centering content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2px;
+    color: #000;
+}
+
+.header-left h1 {
+    padding-bottom: 3px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-right .more-link {
+    font-size: 13px;
+    text-decoration: none;
+    color: inherit; /* Inherit parent color (black) */
+}
+
+.header-right .more-link i {
+    margin-left: 0;
+}
+
+/* Style the feature box */
+.feature-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the individual feature modules */
+.feature {
+    flex: 0 0 calc(33.33% - 10px); /* Three modules per row */
+    text-align: center;
+    padding: 5px;
+    background-color: #fff;
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+/* Style the icons */
+.feature i {
+    font-size: 24px;
+    color: #007bff;
+}
+
+/* Style the feature titles */
+.feature h3 {
+    margin-top: 5px;
+    font-size: 12px; /* 缩小字体 */
+    font-weight: bold;
+    color: #000; /* 改为黑色 */
+    text-align: center;
+}
+
+/* Remove border */
+.feature {
+    border: none; /* 去掉模块边框 */
+}
+
+@media screen and (max-width: 768px) {
+    /* Responsive layout for screens up to 768px wide */
+    .feature {
+        flex: 0 0 calc(50% - 10px); /* Two modules per row */
+    }
+}
+
+a {
+    color: #333; /* 自定义链接的文字颜色 */
+    text-decoration: none; /* 去除链接的下划线，可选 */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #4b79a1 80%, #283e51 100%);
+    color: white;
+}
+
+#weight-chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#weight-chart {
+    width: 80vw;
+    max-height: 40vh;
+    background-color: transparent;
+}
+
+.parameter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.parameter {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: wave-spin 3.3s linear infinite;
+}
+
+.parameter p {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.parameter span {
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .chart-info-box .wave-loader {
+        width: 50px;
+        height: 30px;
+        border-width: 5px;
+    }
+}

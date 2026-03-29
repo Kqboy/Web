@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #f2f2f2; /* 设置浅灰色背景 */
+}
+
+header {
+    background-color: transparent; /* 设置顶部的背景为透明 */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+}
+
+#location-icon i,
+#chat-icon i {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #f2f2f2; /* 添加底色 */
+    border-radius: 50%; /* 设置圆形边角 */
+    padding: 10px; /* 添加内边距 */
+    color: #333; /* 设置图标颜色 */
+    margin: 0 15px; /* 增加图标间距 */
+}
+
+#location-text {
+    font-weight: bold;
+    color: black;
+    display: flex; /* 横向显示 */
+    align-items: center; /* 垂直居中 */
+    margin-right: 15px; /* 添加右侧间距，离地标近一点 */
+}
+
+.small-text {
+    font-size: 14px; /* 缩小字号 */
+}
+
+#location-address {
+    font-size: 12px;
+    color: #333; /* 设置文本颜色为灰色 */
+    text-align: center;
+    margin-top: 5px;
+}
+
+main {
+    padding: 10px;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 10px;
+    background-color: rgba(240, 240, 240, 0.8); /* 设置透明浅灰色背景 */
+    border-radius: 20px; /* 添加更圆的边角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加凸显的阴影效果 */
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #333;
+}
+
+#search-button {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #333;
+}
+
+#search-button i {
+    font-size: 20px;
+}
+
+#search-button:hover {
+    background-color: #f2f2f2;
+}
+
+#location-text-icon {
+    display: flex; /* 横向显示 */
+    align-items: center; /* 垂直居中 */
+}
+
+#location-text-icon i {
+    font-size: 30px; /* 增大地标图标的大小 */
+    color: black; /* 设置地标图标颜色为黑色 */
+    margin-right: 5px; /* 添加右侧间距 */
+}
+
+#location-text-icon {
+    font-weight: bold;
+    display: flex; /* 横向显示 */
+    align-items: center; /* 垂直居中 */
+    white-space: nowrap; /* 强制不换行 */
+    flex-wrap: nowrap; /* 强制不换行 */
+}
+
+#location-text-icon span {
+    color: black !important; /* 设置 "合肥" 字体颜色为黑色 */
+    display: inline; /* 强制横向显示 */
+
+}
+
+.small-text {
+    color: black;
+    font-size: 14px;
+}
+
+/* 在媒体查询中进一步调整手机屏幕上的样式 */
+@media (max-width: 600px) {
+    #location-text-icon i {
+        font-size: 24px; /* 进一步适应小屏幕 */
+    }
+
+    #location-text {
+        margin-right: 2px;
+    }
+}
+
+/*---------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+/* 底部导航栏样式 */
+.bottom-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; /* 底部导航栏的背景颜色 */
+    color: #fff; /* 文本颜色 */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* 底部导航栏的高度 */
+}
+
+/* 导航项样式 */
+.nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease, font-size 0.2s ease; /* 添加过渡效果 */
+}
+
+.nav-item i {
+    font-size: 24px; /* 图标大小 */
+    transition: transform 0.2s ease; /* 添加图标的过渡效果 */
+}
+
+.nav-item span {
+    font-size: 14px; /* 文字大小 */
+    margin-top: 5px; /* 文字和图标之间的间距 */
+    transition: transform 0.2s ease; /* 添加文字的过渡效果 */
+}
+
+/* 鼠标悬停时的样式 */
+.nav-item:hover {
+    background-color: #555; /* 悬停时的背景颜色 */
+    transform: translateY(-5px); /* 使导航项向上位移5px */
+}
+
+.nav-item:hover i {
+    transform: scale(1.1); /* 使图标稍微放大 */
+}
+
+.nav-item:hover span {
+    transform: translateY(5px); /* 使文字向下位移5px */
+}
+
+/*-----------------------------------------------*/
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar */
+.navbar {
+    overflow-x: auto; /* 允许水平滚动 */
+    white-space: nowrap; /* 防止文字换行 */
+    font-size: 16px; /* 字体大小 */
+}
+
+/* Style the navigation list */
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 10px; /* 上下内边距和左右内边距 */
+    gap: 10px; /* 间距 */
+}
+
+/* Style the list items */
+.nav-list li {
+    transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+/* Style the links */
+.nav-list li a {
+    text-decoration: none;
+    color: #333; /* 深灰色 */
+    font-size: 14px; /* 字体更小 */
+    font-weight: bold;
+    transition: font-size 0.2s, font-weight 0.2s, color 0.2s; /* 添加过渡效果 */
+}
+
+/* Hover effect for list items */
+.nav-list li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* 鼠标悬停时的背景色 */
+    cursor: pointer;
+}
+
+/* Selected item style */
+.nav-list li.selected a {
+    font-size: 18px; /* 点击后字体放大 */
+    font-weight: bolder; /* 点击后加粗 */
+    color: #000; /* 点击后变黑 */
+}

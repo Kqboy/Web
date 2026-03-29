@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品详情</title>
+  <link rel="stylesheet" href="CSS/Things_03.css">
+  <!-- 添加FontAwesome库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-o8PpIEiVgZlRzj+X5QlR7wofjqXjWVBK/KIo4U5YMh5mjqUqb50KxcF5W5z3JgWz" crossorigin="anonymous">
+</head>
+<body>
+<header class="product-header">
+  <h1>机器人底座</h1>
+  <p class="price">¥199.99</p>
+</header>
+
+<section class="product-details">
+  <div class="product-image">
+    <img src="./images/03.jpg" alt="商品图片">
+  </div>
+  <div class="product-description">
+    <p>这款商品是一款先进的智能设备，可以提供实时的摄像头画面、行为信息分析、情绪管理等功能。</p>
+    <a href="#" class="buy-now">立即购买</a>
+  </div>
+</section>
+
+<section class="real-time-camera">
+  <h2>实时摄像头</h2>
+  <div class="camera-feed">
+    <video id="camera-stream" autoplay></video>
+  </div>
+  <div class="camera-details">
+    <!-- 行为信息 -->
+    <div class="camera-item">
+      <i class="fas fa-walking"></i>
+      <p>行为信息</p>
+    </div>
+    <!-- 情绪管理 -->
+    <div class="camera-item">
+      <i class="far fa-smile"></i>
+      <p>情绪管理</p>
+    </div>
+    <!-- 睡眠情况 -->
+    <div class="camera-item">
+      <i class="fas fa-bed"></i>
+      <p>睡眠情况</p>
+    </div>
+    <!-- 饮食习惯 -->
+    <div class="camera-item">
+      <i class="fas fa-utensils"></i>
+      <p>饮食习惯</p>
+    </div>
+  </div>
+</section>
+
+<section class="emotional-analysis">
+  <h2>情感分析</h2>
+  <div class="emotional-data">
+    <p>用户情感：愉快</p>
+  </div>
+</section>
+
+<section class="conversation">
+  <h2>对话记录</h2>
+  <div class="chat-history">
+    <ul>
+      <li>用户: 你好，这款产品如何使用？</li>
+      <li>客服: 你可以通过手机App来控制设备，也可以使用语音命令。</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="product-footer">
+  <p>&copy; 2023 商品详情</p>
+</footer>
+</body>
+</html>

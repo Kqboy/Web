@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="Analyze.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>小程序</title>
+</head>
+<body>
+<header>
+    <div id="icons">
+        <div id="location-text-icon">
+            <i class="fas fa-map-marker-alt"></i>
+            <strong><span class="small-text">合肥</span></strong>
+        </div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="输入搜索内容">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="chat-icon"><i class="fas fa-comments"></i></div>
+    </div>
+</header>
+<!-- 数据分析模块 -->
+<div id="circle-container">
+
+    <a class="circle_emotional-analysis_01 circle" id="circle1" href="Analyze/Analyze_01.html">
+        <i class="fas fa-arrows-alt-v"></i>
+        <span>身高</span>
+    </a>
+    <a class="circle_emotional-analysis_02 circle" id="circle2" href="Analyze/Analyze_02.html">
+        <i class="fas fa-smile"></i>
+        <span>心情</span>
+    </a>
+    <a class="circle_emotional-analysis_03 circle" id="circle3" href="Analyze/Analyze_03.html">
+        <i class="fas fa-weight"></i>
+        <span>体重</span>
+    </a>
+    <a class="circle_emotional-analysis_04 circle" id="circle4" href="Analyze/Analyze_04.html">
+        <i class="fas fa-tachometer-alt"></i>
+        <span>血压</span>
+    </a>
+    <a class="circle_emotional-analysis_05 circle" id="circle5" href="Analyze/Analyze_05.html">
+        <i class="fas fa-heartbeat"></i>
+        <span>心率</span>
+    </a>
+    <a class="circle_emotional-analysis_07 circle" id="circle7" href="Analyze/Analyze_07.html">
+        <i class="fas fa-file-medical-alt"></i>
+        <span>CT报告</span>
+    </a>
+</div>
+
+<!--底部导航-->
+<div class="bottom-navbar">
+    <a href="./First.html" class="nav-item">
+        <i class="fas fa-home"></i>
+        <span>首页</span>
+    </a>
+    <a href="./Analyze.html" class="nav-item">
+        <i class="fas fa-robot"></i>
+        <span>数据分析</span>
+    </a>
+    <a href="./ChatWith.html" class="nav-item">
+        <i class="fas fa-comments"></i>
+        <span>交流</span>
+    </a>
+    <a href="./Myself.html" class="nav-item">
+        <i class="fas fa-user"></i>
+        <span>我的</span>
+    </a>
+</div>
+<script src="Analyze.js"></script>
+</body>
+</html>
